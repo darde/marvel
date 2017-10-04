@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "window": true,
+    "document": true,
+  },
+  "plugins": [
+      "react",
+      "jsx-a11y",
+      "import"
+  ],
+  "rules": {
+    "jsx-quotes": 0,
+    "jsx-a11y/href-no-hash": 0,
+  },
+}

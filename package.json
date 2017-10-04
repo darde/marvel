@@ -1,0 +1,58 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "A react boilerplate",
+  "main": "index.jsx",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p --config webpack.config.js",
+    "start": "webpack-dev-server --progress --colors --hot --inline",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "author": "Pablo R. Darde",
+  "license": "ISC",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "transform": {
+      ".*": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "eslint": "^3.x.x",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-loader": "^1.8.0",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^6.0.0",
+    "eslint-plugin-react": "^7.1.0",
+    "file-loader": "^0.11.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "react-test-renderer": "^15.6.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
