@@ -55,6 +55,18 @@ class Characters extends Component {
   }
 
   render() {
+    const mapCharactersComponents = (characters) => {
+      if (!characters || characters.length === 0) return 'loading...';
+      return characters.map(item => (
+        <Character
+          key={item.id}
+          name={item.name}
+          description={item.name}
+          thumb={item.thumbnail}
+        />
+      ));
+    };
+
     return (
       <div className='characters'>
         <header>
@@ -69,18 +81,7 @@ class Characters extends Component {
           </button>
         </div>
         <div className='characters__list'>
-          {
-            this.state.characters.length > 0 ? (
-              this.state.characters.map(item => (
-                <Character
-                  key={item.id}
-                  name={item.name}
-                  description={item.name}
-                  thumb={item.thumbnail}
-                />
-              ))
-            ) : 'loading...'
-          }
+          { mapCharactersComponents(this.state.characters) }
         </div>
       </div>
     );
