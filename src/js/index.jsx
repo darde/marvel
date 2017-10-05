@@ -13,6 +13,6 @@ App.propTypes = {
 };
 
 render(
-  <App name='Marvel' />,
+  <App name='Xunda' />,
   document.getElementById('app'),
 );
