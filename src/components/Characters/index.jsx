@@ -58,7 +58,7 @@ class Characters extends Component {
     return (
       <div className='characters'>
         <header>
-          <h1>Characters</h1>
+          <h2>Characters</h2>
         </header>
         <div>
           <button
@@ -75,6 +75,7 @@ class Characters extends Component {
                 <Character
                   key={item.id}
                   name={item.name}
+                  description={item.name}
                   thumb={item.thumbnail}
                 />
               ))

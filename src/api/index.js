@@ -16,7 +16,6 @@ export const getCharacters = (offset) => {
     }
   })
   .then((response) => {
-    console.log(response);
     const data = response.data.data;
     return data;
   })
