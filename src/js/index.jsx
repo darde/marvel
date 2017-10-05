@@ -1,16 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
+import Home from '../components/Home';
 
-const App = ({ name }) => (
+const App = () => (
   <div>
-    Hello { name }
+    <Home />
   </div>
 );
-
-// https://reactjs.org/docs/typechecking-with-proptypes.html
-App.propTypes = {
-  name: PropTypes.string.isRequired,
-};
 
 render(
   <App name='Xunda' />,
