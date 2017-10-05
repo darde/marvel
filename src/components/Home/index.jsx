@@ -3,7 +3,10 @@ import './styles.less';
 import Characters from '../Characters';
 
 const Home = () => (
-  <div>
+  <div className='home'>
+    <header>
+      <h1>Marvel Universe</h1>
+    </header>
     <Characters />
   </div>
 );
